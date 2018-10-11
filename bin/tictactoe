@@ -5,7 +5,7 @@ require 'pry'
 
 puts "Hello and Welcome to Tic Tac Toe!"
 
-def new_game
+
   puts "How many players? Enter 0-2"
   players = (gets.strip).to_i
   if players == 1
@@ -21,9 +21,7 @@ def new_game
   until game.won? || game.draw?
     game.play
   end
-end
-  
-new_game #starts new game
+
 
 play_again = "" #Would you like to play again?
 until play_again.downcase == "n" || play_again.downcase == "no"
